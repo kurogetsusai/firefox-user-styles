@@ -1,0 +1,32 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Prevent white flash */
+tabbrowser tabpanels {
+	background-color: #2e3436 !important;
+}
+
+#appMenu-fxa-container /* Sync in the butger menu */,
+#appMenu-fxa-container + toolbarseparator,
+#appMenu-library-remotetabs-button /* Sync in the library menu */,
+#pageAction-panel-sendToDevice /* Sync in URL bar menu */,
+#pageAction-panel-emailLink /* "Email link" in URL bar menu */ {
+	display: none !important;
+}
+
+/* Zoom reset in the buger menu */
+#appMenu-zoomReset-button {
+	background-color: var(--arrowpanel-background) !important;
+	border-color: var(--panel-separator-color) !important;
+}
+
+/* Color of the last item in the bookmark menu and downloads menu */
+.subviewbutton.panel-subview-footer,
+.downloadsPanelFooter {
+	background-color: transparent !important;
+	border-top-color: var(--panel-separator-color) !important;
+}
+.subviewbutton.panel-subview-footer:hover,
+.downloadsPanelFooter:hover {
+	background-color: var(--arrowpanel-dimmed) !important;
+	border-top-color: var(--panel-separator-color) !important;
+}
