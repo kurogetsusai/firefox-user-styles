@@ -5,6 +5,11 @@ tabbrowser tabpanels {
 	background-color: #2e3436 !important;
 }
 
+#context-sendimage /* Email in an image's context menu */,
+#context-sendvideo /* Email in a video's context menu */,
+#context-sendaudio /* Email in an audio's context menu */,
+#context-sendpagetodevice /* Sync in a page's context menu */,
+#context-sendlinktodevice /* Sync in a link's context menu */,
 #appMenu-fxa-container /* Sync in the butger menu */,
 #appMenu-fxa-container + toolbarseparator,
 #appMenu-library-remotetabs-button /* Sync in the library menu */,
